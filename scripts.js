@@ -11,7 +11,7 @@ function printSquares(size) {
         let square = document.createElement('div');
         square.style.width = `${960 / size}px`;
         square.classList.add('square');
-        square.addEventListener('mouseover', () => square.classList.add('hover'));
+        square.addEventListener('mouseover', () => changeColor(square));
         /* square.addEventListener('mouseout', () => square.classList.remove('hover')); */
         container.appendChild(square);
     }
@@ -29,5 +29,11 @@ function getSize() {
         printSquares(number);
         return;
     }
+}
+
+// Change color
+function changeColor(element) {
+    const randomColor = Math.floor(Math.random()*16777215).toString(16);
+    element.style.background = "#" + randomColor;
 }
 
