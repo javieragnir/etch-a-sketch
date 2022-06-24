@@ -6,8 +6,8 @@
 }
 
 #gridContainer {
-/*     height: 960px;
-    width: 960px; */
+    height: 960px;
+    width: 960px;
     height: auto;
     max-width:960px;
     background-color: blue;
@@ -17,8 +17,9 @@
 
 .square {
     background-color: maroon;
-    height: 60px;
-    min-width: 60px;
+    width: 60px;
+    aspect-ratio: 1 / 1;
+    height: 100%;
     /* border: 1px white solid; */
 }
 
