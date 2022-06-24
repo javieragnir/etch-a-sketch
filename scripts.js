@@ -1,6 +1,4 @@
 
-
-
 const container = document.querySelector('#gridContainer');
 const btn = document.querySelector('#btn');
 btn.addEventListener('click', getSize);
@@ -16,8 +14,9 @@ function printSquares(size) {
 }
 
 function getSize() {
-    let number = prompt('Please enter how many squares should fit in the width.');
-    if (Number.isInteger(number) === false || number < 1 || number > 100) {
+    let number = parseInt(prompt('Please enter how many squares should fit in the width.'));
+    console.log(number);
+    if (isNaN(number) || number < 1 || number > 100) {
         alert('Input must be an integer between 1 and 100.')
         return;
     } else {
