@@ -11,7 +11,7 @@ function printSquares(size) {
         let square = document.createElement('div');
         square.style.width = `${960 / size}px`;
         square.classList.add('square');
-        square.addEventListener('mouseover', () => square.classList.add('hover'));
+        square.addEventListener('mouseover', () => blackenSquare(square));
         /* square.addEventListener('mouseout', () => square.classList.remove('hover')); */
         container.appendChild(square);
     }
@@ -31,3 +31,10 @@ function getSize() {
     }
 }
 
+function blackenSquare(element) {
+    brightness = Number(window.getComputedStyle(element).filter.slice(11).slice(0, -1));
+    if (brightness > 0) {
+        brightness -= 0.1;
+    }
+    element.style.filter = `brightness(${brightness})`;
+}

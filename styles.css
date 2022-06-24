@@ -9,14 +9,16 @@
     height: 960px;
     width: 960px;
     display: grid;
+    border: 1px black solid;
 }
 
 .square {
-    background-color: maroon;
+    background-color: white;
     aspect-ratio: 1 / 1;
     height: 100%;
+    filter: brightness(100%)
 }
 
 .hover {
-    background-color: yellow;
+    background-color: black;
 }
