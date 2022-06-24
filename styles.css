@@ -1,0 +1,27 @@
+#btn {
+    margin-bottom: 16px;
+    height: 40px;
+    width: 200px;
+    font-size: 24px;
+}
+
+#gridContainer {
+/*     height: 960px;
+    width: 960px; */
+    height: auto;
+    max-width:960px;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+}
+
+.square {
+    background-color: maroon;
+    height: 60px;
+    min-width: 60px;
+    /* border: 1px white solid; */
+}
+
+.hover {
+    background-color: yellow;
+}
