@@ -1,10 +1,12 @@
 
 const container = document.querySelector('#gridContainer');
-const btn = document.querySelector('#btn');
-btn.addEventListener('click', getSize);
+const btn1 = document.querySelector('#btn1');
+btn1.addEventListener('click', getSize);
 
 // Create the grid given a number of squares
 function printSquares(size) {
+    container.innerHTML = '';
+    btn1.textContent = 'Reset canvas';
     for (let i = 0, j = size ** 2; i < j; i++) {
         let square = document.createElement('div');
         square.style.width = `${960 / size}px`;
@@ -28,3 +30,4 @@ function getSize() {
         return;
     }
 }
+
