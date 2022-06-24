@@ -12,12 +12,12 @@
     max-width:960px;
     background-color: blue;
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
+    /* grid-template-columns: repeat(16, 1fr); */
 }
 
 .square {
     background-color: maroon;
-    width: 60px;
+    /* width: 60px; */
     aspect-ratio: 1 / 1;
     height: 100%;
     /* border: 1px white solid; */
